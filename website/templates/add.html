@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+<title>{% block title %}Add vehicle entry || Parking - Devanahalli, Bangalore{% endblock %}</title>
+
+{% block backAndForth %}
+    <div class="backAndForth" style=" display: flex; align-items: right; justify-content: right">
+        <a href="/search" style="width: 50%;">
+            <button type="button" class="btn btn-light" style="width: 100%;">Search Your Vehicle</button><br><br>
+        </a>
+    </div>
+{% endblock %}
+
+{% block bodyContent %}
+    {% block bodyHeading %}
+        <h2 style="text-align: left;">Add New Vehicle</h2>
+    {% endblock %}
+    <form>
+        <div class="form-group">
+            <label for="RegistrationNumber">Registration number</label>
+            <input type="text" class="form-control" id="RegistrationNumber" placeholder="Enter registration number">
+        </div>
+        <div class="form-group">
+            <label for="ParkingName">Parking name</label>
+            <select class="custom-select">
+                <option selected>Select</option>
+                <option value="1">A</option>
+                <option value="2">B</option>
+                <option value="3">C</option>
+                <option value="4">D</option>
+                </select>
+        </div>
+        <div class="form-group">
+            <label for="ParkingLane">Lane number</label>
+            <input type="number" class="form-control" id="ParkingLane" placeholder="Enter lane number">
+        </div>
+        <button type="submit" class="btn btn-primary">Save</button>
+    </form>
+{% endblock %}

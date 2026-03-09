@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+<title>{% block title %}Home || Parking - Devanahalli, Bangalore{% endblock %}</title>
+
+{% block bodyContent %}
+    {% block bodyHeading %}
+        <h2 style="text-align: center;">Choose Your Option</h2>
+    {% endblock %}
+    <div class="homeButtons" style="display: flex; align-items: center; justify-content: center">
+        <a href="/add" style="width:50%;">
+            <button type="button" class="btn btn-light" style="width: 100%;">Add New Vehicle</button><br><br>
+        </a>
+    </div>
+    <div class="homeButtons" style=" display: flex; align-items: center; justify-content: center">
+        <a href="/search" style="width: 50%;">
+            <button type="button" class="btn btn-light" style="width: 100%;">Search Your Vehicle</button><br><br>
+        </a>
+    </div>
+{% endblock %}
