@@ -2,9 +2,12 @@
 <title>{% block title %}Search your vehicle || Parking - Devanahalli, Bangalore{% endblock %}</title>
 
 {% block backAndForth %}
-    <div class="backAndForth" style="display: flex; align-items: right; justify-content: right">
-        <a href="/add" style="width:50%;">
-            <button type="button" class="btn btn-light" style="width: 100%;">Add New Vehicle</button><br><br>
+    <div class="backAndForth">
+        <a href="/add">
+            <button type="button" class="btn btn-light" style="width: 100%;">Add New Vehicle</button>
+        </a>
+        <a href="/add">
+            <button type="button" class="btn btn-light" style="width: 100%;">Download Report</button>
         </a>
     </div>
 {% endblock %}

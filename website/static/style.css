@@ -1,0 +1,11 @@
+.backAndForth {
+    display: flex;
+    flex-direction: column;   /* stack buttons vertically */
+    align-items: center;      /* center horizontally */
+    gap: 10px;                /* space between buttons */
+    width: 100%;
+}
+
+.backAndForth a {
+    width: 50%;
+}
